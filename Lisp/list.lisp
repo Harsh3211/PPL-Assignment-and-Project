@@ -1,0 +1,13 @@
+(princ "Enter number of elements in list: \t")
+(setq x (read))
+(setq y (list))
+(princ "Enter the elements of list: \n")
+(loop for i from 0 to (- x 1)
+  do(
+    setq y (append y (list(read)))
+    )
+)
+(princ "Enter the value of n: ")
+(setq i (read))
+(princ "nth element of list is : ")
+(print (nth i y))
